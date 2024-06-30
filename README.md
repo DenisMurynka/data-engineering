@@ -18,7 +18,6 @@ The Project uses a number of open source technologies to work properly:
 
 
 
-
 ## License
 
 MIT
