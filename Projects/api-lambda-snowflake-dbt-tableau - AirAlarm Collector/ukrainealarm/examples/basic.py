@@ -5,7 +5,7 @@ from ukrainealarm.client import Client
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        client = Client(session, ["API-CODE"])
+        client = Client(session, "54d9b533:890195ccec5898601d39e7546dc45045")
 
         # All response formats are available here: https://api.ukrainealarm.com/swagger/index.html
         regions = await client.get_regions()
