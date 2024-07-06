@@ -5,11 +5,13 @@ from ukrainealarm.client import Client
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        client = Client(session, "api-code")
+        client = Client(session, "API-CODE")
 
         # All response formats are available here: https://api.ukrainealarm.com/swagger/index.html
-        # regions = await client.get_regions()
-        # print("regions list", regions)
+        #global data
+        #regions = await client.get_regions()
+        #return data
+        #print("regions list", regions)
 
         # all_alerts = await client.get_alerts()
         # print("all alerts", all_alerts)
@@ -19,8 +21,11 @@ async def main():
 
         # last_alert_index = await client.get_last_alert_index()
         # print("last alert index", last_alert_index)
+       
         
-        regions = await client.get_history(region_id=31)
+        regions = await client.get_history(region_id=16)
         print("last 25 alerts in region ", regions)
+        
 
 asyncio.run(main())
+
