@@ -1,11 +1,5 @@
 import json
 import pandas as pd
-# with open('airalert_20240601_20240630.json', 'r') as f:
-
-# dff.to_csv('op.csv', sep='\t', encoding='utf-8')
-
-import json
-import pandas as pd
 
 # Load the JSON data
 with open('airalert_20240601_20240630.json', 'r', encoding='utf-8') as file:
